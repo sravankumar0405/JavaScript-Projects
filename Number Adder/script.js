@@ -1,0 +1,12 @@
+const addButtonEl = document.querySelector('#addButton');
+const result = document.getElementById('result');
+
+addButtonEl.addEventListener('click', () => {
+   let num1 = document.querySelector('#num1').value;
+   let num2 = document.querySelector('#num2').value;
+
+   let sum = parseFloat(num1) + parseFloat(num2); 
+
+   result.innerHTML = '<i class="fa-solid fa-equals icon"></i>' + sum;
+})
+
